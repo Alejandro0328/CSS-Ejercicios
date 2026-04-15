@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .contenedor {
+            width: 80vw;
+            height: 95vh;
+            margin: 0 auto;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        header {
+            height: 20%;
+            background-color: #8a2be2;
+            color: #adff2f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        nav {
+            height: 8%;
+            background-color: #5f9ea0;
+            border-radius: 10px;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            gap: 10px;
+        }
+
+        .contenido-principal {
+            flex: 2;
+            background-color: #7fffd4;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border-radius: 10px;
+        }
+
+        article {
+            flex: 1;
+            background-color: #b22222;
+            color: white;
+            font-size: 10px;
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #deb887;
+            border-radius: 10px;
+        }
+
+        footer {
+            height: 15%;
+            background-color: #556b2f;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <header>Ejemplo maquetacion</header>
+        
+        <nav></nav>
+
+        <main>
+            <section class="contenido-principal">
+                <article>articulo 1</article>
+                <article>articulo 2</article>
+                <article>articulo 3</article>
+                <article>articulo 4</article>
+                <article>articulo 5</article>
+            </section>
+            
+            <aside></aside>
+        </main>
+
+        <footer></footer>
+    </div>
+
+</body>
+</html>

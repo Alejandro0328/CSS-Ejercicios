@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 1rem;
+            padding: 0;
+            background-color: #000080;
+            height: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .parent {
+            min-height: 200vh;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .static, .sticky {
+            padding: 12px 20px;
+            font-size: 18px;
+            border-bottom: 1px solid #000080;
+        }
+
+        .static {
+            position: static;
+            background-color: #f0f8ff;
+        }
+
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #ffead0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="sticky">Pegajoso</div>
+        <div class="static">Estatico</div>
+        <div class="static">Estatico</div>
+        <div class="static">Estatico</div>
+        <div class="static">Estatico</div>
+        <div class="static">Estatico</div>
+        <div class="static">Estatico</div>
+    </div>
+</body>
+</html>

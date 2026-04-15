@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contenedor-principal {
+            width: 600px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 1px solid #ccc;
+        }
+
+        .cabecera-visual {
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bloque-superior {
+            background-color: #8b4513;
+            flex: 2;
+        }
+
+        .bloque-inferior {
+            background-color: #d35400;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .perfl {
+            width: 150px;
+            height: 150px;
+            background-color: #808080;
+            border: 4px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .info-bio {
+            background-color: #f1c40f;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .info-bio h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .info-bio p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .creditos {
+            background-color: #2980b9;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .creditos span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        
+        <div class="cabecera-visual">
+            <div class="bloque-superior"></div>
+            <div class="bloque-inferior">
+                <div class="perfl">
+                    En esta parte irá la foto del usuario... (150px x 150px)
+                </div>
+            </div>
+        </div>
+
+        <div class="info-bio">
+            <h1>Nombre de la persona</h1>
+            <p>En esta sección se pondrá el texto que describe a la persona que hará la biografía.</p>
+        </div>
+
+        <div class="creditos">
+            Esta sección se usará para establecer el nombre de la persona que desarrolló la plantilla.
+            <span>Plantilla Realizada por: Noé Zavala - 666 - 0148745</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
